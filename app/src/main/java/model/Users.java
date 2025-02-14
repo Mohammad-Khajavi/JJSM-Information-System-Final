@@ -9,9 +9,15 @@ public class Users {
 
     public Users(int id, String password){
         this.id = id;
+        this.password = password;
+    }
+
+    public Users(int id, String password, String name, String username, String role){
+        this.id = id;
+        this.password = password;
         this.name = name;
         this.username = username;
-        this.password = password;
+        this.role = role;
     }
 
     public int getId() {
@@ -46,5 +52,11 @@ public class Users {
         this.username = username;
     }
 
+    public String getRole() {
+        return role;
+    }
 
+    public void setRole(String role) {
+        this.role = role;
+    }
 }
