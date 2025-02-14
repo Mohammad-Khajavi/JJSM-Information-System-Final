@@ -6,7 +6,8 @@
     </style>
 
     <style name="Theme.JJSMInformationSystemFinal" parent="Base.Theme.JJSMInformationSystemFinal" />
-    <style name="Text_Style">
+
+    <style name="TextView_Style">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginStart">10dp</item>
@@ -28,4 +29,13 @@
         <item name="android:layout_marginTop">30dp</item>
         <item name="android:layout_marginStart">20dp</item>
     </style>
+
+    <style name="Theme.JJSMInformationSystemFinal.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.JJSMInformationSystemFinal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.JJSMInformationSystemFinal.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
