@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://jjsm-information-system-final-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">174472314640</string>
+    <string name="google_api_key" translatable="false">AIzaSyDrKP3sryfLxipnXtCNaPFtzxdj-GYS__8</string>
+    <string name="google_app_id" translatable="false">1:174472314640:android:37296dc32dee6dd9416f95</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDrKP3sryfLxipnXtCNaPFtzxdj-GYS__8</string>
+    <string name="google_storage_bucket" translatable="false">jjsm-information-system-final.firebasestorage.app</string>
+    <string name="project_id" translatable="false">jjsm-information-system-final</string>
+</resources>
