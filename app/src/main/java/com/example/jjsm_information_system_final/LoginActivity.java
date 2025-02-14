@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.service.autofill.UserData;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -71,7 +72,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         tvForgotPassword.setOnClickListener(this);
         cbHide.setOnCheckedChangeListener(((buttonView, isChecked) -> showPassword(isChecked)));
 
-        userDb = FirebaseDatabase.getInstance().getReference("User");
+        userDb = FirebaseDatabase.getInstance().getReference("Users");
 
         disablePaste(etUserId);
         disablePaste(etPassword);
@@ -129,12 +130,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             editor.putLong(KEY_LAST_ACTIVITY, System.currentTimeMillis());
                             editor.apply();
 
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            intent.putExtra("userId",userId);
+                            Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
                             startActivity(intent);
                             finish();
                         } else {
                             Snackbar.make(v, "Error. Password Invalid", Snackbar.LENGTH_LONG).show();
+                            Log.d("FirebaseDebug", "Checking User: " + userId);
                         }
                     } else {
                         Snackbar.make(v, "Error. User Id not found.", Snackbar.LENGTH_LONG).show();
@@ -160,7 +161,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void createAccount(View v) {
-        Intent intent = new Intent(LoginActivity.this, CreateAccount.class);
+        Intent intent = new Intent(LoginActivity.this, CreateAccountActivity.class);
         startActivity(intent);
     }
 }

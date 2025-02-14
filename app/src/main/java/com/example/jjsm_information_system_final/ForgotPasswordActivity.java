@@ -59,7 +59,7 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
         btnFPFindUser.setOnClickListener(this);
         btnFPConfirm.setOnClickListener(this);
 
-        userDB = FirebaseDatabase.getInstance().getReference("User");
+        userDB = FirebaseDatabase.getInstance().getReference("Users");
     }
 
     @Override
