@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.jjsm_information_system_final"
-    compileSdk = 34
+    namespace = "com.example.jjsminventoria"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.jjsm_information_system_final"
+        applicationId = "com.example.jjsminventoria"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -42,7 +42,6 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.database)
-    implementation(libs.annotation)
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
     testImplementation(libs.junit)
